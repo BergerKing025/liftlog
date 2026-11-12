@@ -14,6 +14,7 @@
 <style>html,body{margin:0;background:#EDF0ED;-webkit-text-size-adjust:100%}button{-webkit-tap-highlight-color:transparent}</style>
 </head><body>
 <div id="root"></div>
+<script>(function(){try{var q=new URLSearchParams(location.search).get('icon');if(q&&/^[a-z]+$/.test(q)){['apple-touch-icon','icon'].forEach(function(r){var l=document.querySelector('link[rel="'+r+'"]');if(l)l.setAttribute('href','icon-'+q+'-180.png')})}}catch(e){}})();</script>
 <script src="app.js"></script>
 <script>if('serviceWorker' in navigator){var had=!!navigator.serviceWorker.controller,done=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(had&&!done){done=true;location.reload()}});window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){})})}</script>
 </body></html>
